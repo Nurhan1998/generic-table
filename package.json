@@ -1,0 +1,90 @@
+{
+  "name": "alkan-front",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^32.0.0",
+    "@ckeditor/ckeditor5-react": "^3.0.3",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.3.1",
+    "@mui/material": "^5.2.8",
+    "@remirror/pm": "^1.0.13",
+    "@remirror/react": "^1.0.25",
+    "axios": "^0.24.0",
+    "ckeditor4-react": "^2.1.0",
+    "classnames": "^2.3.1",
+    "immutable": "4.0.0-rc.12",
+    "lodash": "^4.17.21",
+    "next": "^12.0.4",
+    "next-redux-saga": "^4.1.2",
+    "next-redux-wrapper": "^7.0.5",
+    "next-transpile-modules": "^9.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-notifications-component": "^3.1.0",
+    "react-redux": "^7.2.6",
+    "react-scripts": "5.0.0",
+    "redux": "^4.1.2",
+    "redux-saga": "^1.1.3",
+    "remirror": "^1.0.68",
+    "reselect": "^4.1.4",
+    "tss-react": "^3.4.2",
+    "web-vitals": "^2.1.0",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.13",
+    "@types/react": "^17.0.20",
+    "@types/react-dom": "^17.0.9",
+    "@types/react-notifications-component": "^3.1.1",
+    "@types/react-redux": "^7.1.20",
+    "@types/reselect": "^2.2.0",
+    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^7.0.4",
+    "node-sass": "^6.0.1",
+    "redux-devtools-extension": "^2.13.9",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "^4.1.2"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint:types && npm run lint && git add ."
+    }
+  }
+}
